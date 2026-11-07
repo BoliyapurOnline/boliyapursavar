@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Boliyapur Community — বলিয়াপুরের মানুষ, খবর, সেবা ও স্থানীয় উদ্যোগের একটি কমিউনিটি প্ল্যাটফর্ম।">
+  <meta name="theme-color" content="#0b5b4b">
+  <title>Boliyapur | আমাদের এলাকা, আমাদের বন্ধন</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span>একসাথে গড়ি সুন্দর বলিয়াপুর</span><span class="topbar-right">Community • Connection • Progress</span></div></div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Boliyapur home">
+        <span class="brand-mark">B</span><span><strong>Boliyapur</strong><small>আমাদের এলাকা, আমাদের বন্ধন</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="মেনু খুলুন" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav id="mainNav">
+        <a href="#home" class="active">হোম</a><a href="#about">আমাদের কথা</a><a href="#updates">আপডেট</a><a href="#services">স্থানীয় সেবা</a><a href="#gallery">গ্যালারি</a><a href="#contact" class="nav-cta">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-pattern"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><i></i> WELCOME TO BOLIYAPUR</span>
+          <h1>আমাদের বলিয়াপুর,<br><em>আমাদের ভালোবাসা।</em></h1>
+          <p>এলাকার খবর, মানুষের গল্প, প্রয়োজনীয় তথ্য আর ভালো উদ্যোগ—সবকিছু এক জায়গায়। চলুন, নিজের এলাকার পাশে থাকি।</p>
+          <div class="hero-actions"><a class="btn btn-light" href="#updates">সর্বশেষ আপডেট <span>↗</span></a><a class="btn btn-outline" href="#about">আরও জানুন</a></div>
+          <div class="hero-note"><span class="note-icon">✦</span><span><b>একটি কমিউনিটি উদ্যোগ</b><small>মানুষের জন্য, মানুষের অংশগ্রহণে</small></span></div>
+        </div>
+        <div class="hero-art" aria-label="সবুজে ঘেরা গ্রামের দৃশ্য">
+          <div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div>
+          <div class="river"></div><div class="tree tree-one"><i></i></div><div class="tree tree-two"><i></i></div>
+          <div class="house house-one"><b></b><i></i></div><div class="house house-two"><b></b><i></i></div>
+          <div class="art-label"><span>⌖</span><div><b>Boliyapur</b><small>একটি প্রাণের ঠিকানা</small></div></div>
+        </div>
+      </div>
+      <div class="hero-bottom"><div class="container hero-bottom-inner"><span>একতার শক্তিতে এগিয়ে যাই</span><span class="scroll-cue">SCROLL TO EXPLORE ↓</span></div></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container intro-grid">
+        <div><span class="section-tag">ABOUT OUR COMMUNITY</span><h2>এলাকার খবর জানি,<br><span>এলাকার মানুষকে চিনি।</span></h2></div>
+        <div class="intro-text"><p>Boliyapur হলো বলিয়াপুর এলাকার মানুষের জন্য একটি কমিউনিটি প্ল্যাটফর্ম। এখানে স্থানীয় তথ্য, গুরুত্বপূর্ণ ঘোষণা, সামাজিক উদ্যোগ এবং এলাকার মানুষের ইতিবাচক গল্প তুলে ধরা হবে।</p><p class="muted">এই ওয়েবসাইটটি সবার অংশগ্রহণে সমৃদ্ধ হবে। সঠিক তথ্য ও গঠনমূলক পরামর্শ দিয়ে পাশে থাকুন।</p></div>
+      </div>
+    </section>
+
+    <section class="updates section" id="updates">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-tag">COMMUNITY BOARD</span><h2>এলাকার <span>আপডেট</span></h2></div><span class="heading-caption">গুরুত্বপূর্ণ তথ্য এক নজরে</span></div>
+        <div class="notice-strip"><span class="notice-icon">!</span><div><b>কমিউনিটি নোটিশ</b><p>এখানে যাচাই করা স্থানীয় ঘোষণা ও জরুরি আপডেট প্রকাশ করুন।</p></div><span class="notice-chip">NOTICE</span></div>
+        <div class="card-grid" id="newsGrid" aria-live="polite"></div>
+        <p class="demo-note">নতুন খবর যোগ করতে content.js ফাইলে news তালিকায় একটি নতুন আইটেম যোগ করুন।</p>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-tag">LOCAL DIRECTORY</span><h2>স্থানীয় <span>তথ্য ও সেবা</span></h2></div><p class="heading-caption">আপনার প্রয়োজনীয় তথ্য খুঁজে নিন</p></div>
+        <div class="service-grid" id="serviceGrid"></div>
+        <p class="demo-note">প্রতিষ্ঠানের নাম, ঠিকানা, ফোন ও ওয়েবসাইট content.js ফাইল থেকে যোগ বা পরিবর্তন করুন। প্রকাশের আগে তথ্য যাচাই করুন।</p>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-tag">OUR MOMENTS</span><h2>আমাদের <span>গ্যালারি</span></h2></div><p class="heading-caption">এলাকার সুন্দর মুহূর্তগুলো</p></div>
+        <div class="gallery-filters" id="galleryFilters" aria-label="ছবির বিভাগ"></div>
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+        <p class="demo-note">স্কুলের অনুষ্ঠান, খেলাধুলা, সামাজিক উদ্যোগ ও এলাকার ছবি এখানে বিভাগ অনুযায়ী দেখাবে। ছবি আপলোডের নিয়ম README ফাইলে দেওয়া আছে।</p>
+      </div>
+    </section>
+
+    <section class="join-section">
+      <div class="container join-inner"><div><span class="section-tag">BE PART OF IT</span><h2>আপনার এলাকার গল্প<br>আপনিই তুলে ধরুন।</h2><p>খবর, ছবি, পরামর্শ বা কোনো ভালো উদ্যোগের তথ্য আমাদের পাঠান।</p></div><a class="btn btn-light" href="#contact">অংশগ্রহণ করুন <span>↗</span></a></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div><span class="section-tag">GET IN TOUCH</span><h2>যোগাযোগ <span>করুন</span></h2><p>ওয়েবসাইটে কোনো তথ্য যোগ করতে, ভুল সংশোধন করতে বা মতামত জানাতে নিচের ফর্মটি ব্যবহার করুন।</p><div class="contact-info"><span>✉</span><div><b>কমিউনিটি ইনবক্স</b><small>আপনার ইমেইল/ফেসবুক পেজের লিংক এখানে বসান</small></div></div></div>
+        <form id="contactForm" class="contact-form">
+          <label>আপনার নাম<input required name="name" placeholder="নাম লিখুন"></label>
+          <label>ইমেইল বা ফোন<input required name="reply" placeholder="যোগাযোগের তথ্য"></label>
+          <label>আপনার বার্তা<textarea required name="message" rows="4" placeholder="আপনার কথা লিখুন..."></textarea></label>
+          <button class="btn btn-primary" type="submit">বার্তা তৈরি করুন <span>→</span></button>
+          <small class="form-hint">এই ডেমো ফর্মটি আপনার ইমেইল অ্যাপে বার্তা তৈরি করবে; সার্ভারে তথ্য জমা করে না।</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-top"><a class="brand brand-footer" href="#home"><span class="brand-mark">B</span><span><strong>Boliyapur</strong><small>আমাদের এলাকা, আমাদের বন্ধন</small></span></a><p>একটি সুন্দর, সচেতন ও সহযোগিতামূলক কমিউনিটি গড়ার ছোট্ট উদ্যোগ।</p><a class="back-top" href="#home">উপরে যান ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> Boliyapur Community</span><span>Made with care for our community</span></div></footer>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
